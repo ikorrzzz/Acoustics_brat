@@ -64,11 +64,3 @@ extern "C"{
 int full_sigma_tau(const DVectors &grid, const complex_vector &g,
                        std::vector <double> &sigma_tau, double k, const int parts);
 
-complex subintegrative_function_2(const DataPoints &normal_x,
-                                const DataPoints &x_point,
-                                const DataPoints &normal_y,
-                                const DataPoints &y_point,
-                                const double k);
-
-int full_A_mod(complex (*f)(const DataPoints &, const DataPoints &, const DataPoints &, const DataPoints &, double),
-           const DVectors &grid, complex_vector &A_matix, const double k);
